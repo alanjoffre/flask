@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo</title>
+</head>
+<body>
+
+{# Comentário em jinga2 #}
+
+<p>modelo</p>
+<p>{{8 + 8}} {# Imprimir objeto jinga2 #}</p>
+<p>{{x + y}} {# Imprimir objeto jinga2 #}</p>
+
+<p>
+{# Declaração em jinga2 #}
+{% if x >= 50 %}
+    <p>Olá</p>
+{% else %}
+    <p> else </p>
+{% endif %}
+</p>
+
+<hr>
+
+<table>
+    {% for k, v in query.items()%}
+    <tr>
+        <th>{{ k }}</th>
+        <td>{{ v }}</td>
+    </tr>
+    {% endfor%}
+    {# http://127.0.0.1:5000?nome=Joao&idade=18 #}
+</table>
+
+</body>
+</html>

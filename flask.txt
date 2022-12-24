@@ -1,0 +1,31 @@
+Python / Flask
+
+O que é?
+O Flask é um framework de aplicativo para Web escrito em Python.
+Armin Ronacher, que lidera um grupo internacional de estusiastas de Python chamado Pocco, ajuda a desenvolver ele. O Flask é baseado no kit de ferramentas Werkzeug WSGI e no mecanismo de modelos Jinja2. Ambos são projetos da Pocco.
+
+O que é o Web Framework?
+O Web Application Framework ou simplesmente Web Framework representa uma coleção de bibliotecas e módulos que permite que um desenvolvedor de aplicativos da WEeb grave aplicativos sem ter que se preocupar com detalhes de baixo nivel, como protocolos, gerenciamento de encadeamentos, etc.
+
+Werkzeug
+É um kit de ferramentas WSGI, que implementa solicitações. objetos de respostas e outras funções de utilitário. Isso permite construir um framework Websobre ele. O framework Flask usa o Werkzeug como uma de suas bases.
+
+Jinja2
+Junja2 é um motor de templates popular para Python. Um sistema de modelos da Web combina um modelo com uma determinada fonte de dados para renderizar páginas da Web dinâmicas
+
+O Flask é geralmente chamado de microestrutura. O objetivo é manter o núcleo de uma aplicação simples, porém extensivel. O Flask não possui uma camada de abstração embutida para manipulação de bando de dados, nem possui um suporte de validação. Em vez disso, O Flask suporta as extensões para incluir essa funcionalidade no aplicativo. Algumas das extensões populares são discutidas mais adiante.
+
+Crie um diretório (meu projeto utilizei o nome de flask)
+
+Abra o PowerShell
+
+Acesse o diretório criado para o projeto
+cd D:\Ti\Cursos\Vscode\github\flask
+
+Instale o Flask
+pip install Flask
+
+
+
+
+
