@@ -1,4 +1,4 @@
-# Aula 16 - REST API parte 2
+# REST API parte 2
 from flask import Flask
 from aula16.models.models import db
 from aula16.controllers.estudante import app as estudante_controller
