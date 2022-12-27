@@ -1,4 +1,4 @@
-# Aula 15 - REST API parte 1
+# REST API parte 1
 
 from flask import Flask, render_template, request, url_for, redirect, Response
 from aula15.models import db, Estudante

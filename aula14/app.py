@@ -7,7 +7,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///estudantes.sqlite3'
 
 db = SQLAlchemy(app)
 
-
 class Estudante(db.Model):
     id = db.Column('id', db.Integer, primary_key=True, autoincrement=True)
     nome = db.Column(db.String(150))
@@ -17,12 +16,10 @@ class Estudante(db.Model):
         self.nome = nome
         self.idade = idade
 
-
 @app.route('/')
 def index():
     estudantes = Estudante.query.all()
     return render_template('index.html', estudantes=estudantes)
-
 
 @app.route('/add', methods=['GET', 'POST'])
 def add():
@@ -32,7 +29,6 @@ def add():
         db.session.commit()
         return redirect(url_for('index'))
     return render_template('add.html')
-
 
 @app.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit(id):
@@ -44,7 +40,6 @@ def edit(id):
         return redirect(url_for('index'))
     return render_template('edit.html', estudante=estudante)
 
-
 @app.route('/delete/<int:id>')
 def delete(id):
     estudante = Estudante.query.get(id)
@@ -52,7 +47,8 @@ def delete(id):
     db.session.commit()
     return redirect(url_for('index'))
 
-
 if __name__ == '__main__':
-    db.create_all()
+    db.init_app(app=app)
+    with app.test_request_context():
+        db.create_all()
     app.run(debug=True)

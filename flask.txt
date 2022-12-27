@@ -25,6 +25,12 @@ cd D:\Ti\Cursos\Vscode\github\flask
 Instale o Flask
 pip install Flask
 
+Instale a extensão: Coder Runner
+Ative a extensão > Vscode > Configurações > digite: code-runner > Marque a opção: Code-runner: File Directory AS CWD
+
+Instale o SQLAlchemy
+pip install flask-sqlalchemy
+
 
 
 
