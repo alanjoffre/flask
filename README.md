@@ -1,2 +1,2 @@
 # flask
-Repositório com aprendizado e exercícios em Flask
+Repositório com aprendizado e exercícios: Flask
