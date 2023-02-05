@@ -28,6 +28,8 @@ pip install Flask
 Instale a extensão: Coder Runner
 Ative a extensão > Vscode > Configurações > digite: code-runner > Marque a opção: Code-runner: File Directory AS CWD
 
+Recomendação: Não salve o arquivo python como: flask.py
+
 Instale o SQLAlchemy
 pip install flask-sqlalchemy
 
