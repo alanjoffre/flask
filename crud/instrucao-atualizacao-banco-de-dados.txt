@@ -1,0 +1,4 @@
+# Instrução para adicionar Coluna em banco de dados SQLite
+
+Altere ou adicione pelo: DB Browser for SQLite
+
