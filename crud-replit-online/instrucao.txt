@@ -1,0 +1,10 @@
+# Procedimento para postar projeto no Replit.
+
+- Crie uma conta no site: https://replit.com/
+- Crie um projeto e selecione o tipo: Flask
+- Dê um nome ao seu projeto
+- Copie o código da sua aplicação para: main.py
+- Importe para o seu projeto no Replit a pasta: templates
+- Clique no botão RUN do site Replit
+- Aguarde a instalação das bibliotecas (automatico)
+- Pronto! Sua aplicação está online!

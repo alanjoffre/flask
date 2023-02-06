@@ -64,7 +64,6 @@ def delete(id):
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    db.init_app(app=app)
     with app.test_request_context():
         db.create_all()
-    app.run(debug=True)
+app.run(host='0.0.0.0', port=81)

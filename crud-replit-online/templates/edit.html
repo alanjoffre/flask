@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD ESTUDANTE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1 style="text-align:center;">EDITAR: {{ estudante.nome }}</h1>
+<form action="/edit/{{ estudante.id }}" class="container" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" name="nome" id="nome" placeholder="nome" class="form-control"
+                   value="{{ estudante.nome }}">
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="endereco" id="endereco" placeholder="endereco" class="form-control"
+                   value="{{ estudante.nome }}">
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="estado" id="estado" placeholder="estado" class="form-control"
+                   value="{{ estudante.nome }}">
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="cidade" id="cidade" placeholder="cidade" class="form-control"
+                   value="{{ estudante.nome }}">
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="email" id="email" placeholder="email" class="form-control"
+                   value="{{ estudante.email }}">
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="profissao" id="profissao" placeholder="profissao" class="form-control"
+                   value="{{ estudante.profissao }}">
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="idade" id="idade" placeholder="idade" class="form-control"
+                   value="{{ estudante.idade }}">
+        </div>
+    </div>
+    <br>
+    <div class="row col-xs-12">
+        <button type="submit" class="btn btn-block btn-success">ENVIAR</button>
+    </div>
+</form>
+</body>
+</html>
