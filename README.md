@@ -1,2 +1,2 @@
 # flask
- - Repositório com: artigos, aprendizado, exercícios e projetos.
+- Repositório com: artigos, aprendizados, exercícios e projetos.
